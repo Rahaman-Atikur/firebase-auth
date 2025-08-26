@@ -13,13 +13,12 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Home
+        Component: Home,
       },
       { path: 'login', Component: Login },
     ]
   }
 ])
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
